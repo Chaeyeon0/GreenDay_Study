@@ -7,6 +7,6 @@ public class HelloController {
     @GetMapping("hello") // 웹 어플리케이션에서 /hello를 호출하면 이 메서드를 호출하게 됨
     public String hello(Model model){ // MVC에서의 model
         model.addAttribute("data","hello!!"); //data를 hello!!로 넘길꺼임
-        return "hello";
+        return "hello"; //templates파일의 hello.html로 가게 함
     }
 }
